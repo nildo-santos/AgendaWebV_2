@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  background: radial-gradient(circle at top left, #bdcfea 0%, #8fbdea 40%, #7da1ea 100%),
+              linear-gradient(135deg, #ccd8ea 0%, #6491da 100%);
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
