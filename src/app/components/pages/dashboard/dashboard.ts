@@ -3,12 +3,15 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject, signal } from '@angular/core';
 import { Chart, ChartModule } from 'angular-highcharts';
 import { environment } from '../../../../environments/environment';
+import { Navbar } from '../../shared/navbar/navbar';
 
 @Component({
   selector: 'app-dashboard',
   imports: [
     CommonModule,
-    ChartModule
+    ChartModule,
+    Navbar
+
   ],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css'

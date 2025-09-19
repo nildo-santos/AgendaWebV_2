@@ -4,13 +4,15 @@ import { Component, inject, signal, ElementRef, ViewChildren, QueryList, AfterVi
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { environment } from '../../../../environments/environment';
 import { gsap } from 'gsap';
+import { Navbar } from '../../shared/navbar/navbar';
 
 @Component({
   selector: 'app-consultar-tarefas',
   imports: [
     CommonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    Navbar
   ],
   templateUrl: './consultar-tarefas.html',
   styleUrls: ['./consultar-tarefas.css']

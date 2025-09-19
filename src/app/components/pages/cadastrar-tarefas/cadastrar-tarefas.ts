@@ -4,13 +4,15 @@ import { Component, inject, signal, effect, AfterViewInit } from '@angular/core'
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { environment } from '../../../../environments/environment';
 import { gsap } from 'gsap';
+import { Navbar } from '../../shared/navbar/navbar';
 
 @Component({
   selector: 'app-cadastrar-tarefas',
   imports: [
     CommonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    Navbar
   ],
   templateUrl: './cadastrar-tarefas.html',
   styleUrls: ['./cadastrar-tarefas.css'] // corrigido
